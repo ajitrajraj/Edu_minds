@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    background: #1118;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.main header h1 {
+    margin-left: 2%;
+}
+
+.main header h1 span:nth-child(1) {
+    color: yellow;
+}
+
+.main header h1 span:nth-child(2) {
+    color: tomato;
+}
+
+.main header .follow {
+    width: 30%;
+    color: #222;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: tomato;
+    height: 100%;
+    clip-path: polygon(38% 1%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.main header .follow h4,
+button {
+    margin-right: -30%;
+}
+
+.main header .follow button {
+    width: 60%;
+    height: 25px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    background: yellow;
+    color: tomato;
+    cursor: pointer;
+}
+
+
+
+/* ...........................................container */
+/* ..........................................firstpage */
+.pr1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #888;
+}
+
+.firstpage {
+    width: 98%;
+    height: 85vh;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* row-gap: 2%; */
+    z-index: 99;
+}
+
+/* .......................................slidshow */
+.firstpage .slidshow {
+    position: relative;
+    height: 97%;
+    width: 60%;
+    /* background: url('slid2.jpg'); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url('studygirl.png'); */
+    border-radius: 8px;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% {
+        background: url(slide3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: yellow;
+    }
+
+    20% {
+        background: url(studygirl.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: black;
+
+    }
+
+    25% {
+        background: url(studygirl.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: black;
+    }
+
+
+    45% {
+        background: url('slide5.avif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: tomato;
+    }
+
+    50% {
+        background: url('slide5.avif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: tomato;
+    }
+
+
+    70% {
+        background: url('slide3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: aqua;
+
+    }
+
+    75% {
+        background: url('slide3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: aqua;
+
+    }
+
+    95% {
+        background: url('slide4.avif');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+        background-size: 100% 100%;
+        color: yellow;
+    }
+
+    100% {
+        background: url('slide4.avif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: yellow;
+    }
+}
+
+.firstpage .slidshow .topic {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+
+}
+
+/* .firstpage .slidshow:hover{
+    opacity: 1;
+
+} */
+.firstpage .side_img_bar {
+    width: 40%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+.firstpage .side_img_bar img {
+    height: 50%;
+    width: 95%;
+    border-radius: 8px;
+}
+
+/* .......................................second page */
+.secondpage {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+}
+
+.secondpage .content {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    background: transparent;
+    /* overflow-y: scroll;
+    scroll-behavior: smooth; */
+    z-index: 5;
+
+}
+
+.par {
+        background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url('2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -9;
+}
+
+.imgtop {
+    position: absolute;
+    top: -100px;
+    right: -15px;
+    width: 40%;
+    height: 63%;
+    border-radius: 0 50px;
+    z-index: -2;
+}
+
+.imgbottem {
+    position: absolute;
+    bottom: -100px;
+    left: -15px;
+    width: 40%;
+    height: 63%;
+    border-radius: 0 50px;
+    z-index: -2;
+}
+
+/* .secondpage::before{
+    position: fixed;
+    top: 0;
+    background-color: red;
+    content: "";
+    width: 80%;
+    height: 100%;
+    z-index: -9;
+} */
+
+footer {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-color: black;
+}
+footer .water{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+footer .water:nth-child(1){
+    background-color: aqua;
+    animation: w1 2s infinite;
+    opacity: .5;
+}
+@keyframes w1{
+    0%, 100%{
+        clip-path: polygon(0 24%, 8% 17%, 18% 15%, 27% 19%, 38% 21%, 46% 24%, 52% 22%, 61% 20%, 66% 19%, 73% 18%, 79% 12%, 86% 11%, 93% 9%, 100% 4%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 6%, 7% 15%, 16% 22%, 26% 25%, 38% 28%, 47% 23%, 52% 18%, 59% 14%, 66% 10%, 73% 12%, 79% 12%, 87% 18%, 94% 24%, 100% 30%, 100% 100%, 0 100%);
+    }
+}
+
+footer .water:nth-child(2){
+    background-color: aqua;
+    animation: w2 1.5s infinite;
+    opacity: .7;
+    z-index: 90;
+}
+@keyframes w2{
+    0%, 100%{
+        clip-path: polygon(0% 9%, 6% 8%, 14% 11%, 18% 14%, 24% 14%, 33% 12%, 39% 9%, 48% 7%, 54% 9%, 60% 14%, 65% 18%, 71% 17%, 78% 17%, 84% 14%, 90% 13%, 98% 11%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 0, 4% 8%, 10% 8%, 18% 9%, 24% 8%, 33% 12%, 41% 15%, 49% 18%, 55% 19%, 61% 14%, 67% 8%, 73% 6%, 80% 8%, 88% 10%, 96% 14%, 100% 19%, 100% 100%, 0 100%);
+    }
+}
+
+footer .water:nth-child(3){
+    background-color: aqua;
+    animation: w3 2.5s infinite reverse;
+    opacity: 1;
+    z-index: 99;
+}
+@keyframes w3{
+    0%, 100%{
+        clip-path: polygon(0 24%, 8% 17%, 18% 15%, 27% 19%, 38% 21%, 46% 24%, 52% 22%, 61% 20%, 66% 19%, 73% 18%, 79% 12%, 86% 11%, 93% 9%, 100% 4%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 6%, 7% 15%, 16% 22%, 26% 25%, 38% 28%, 47% 23%, 52% 18%, 59% 14%, 66% 10%, 73% 12%, 79% 12%, 87% 18%, 94% 24%, 100% 30%, 100% 100%, 0 100%);
+    }
+}
